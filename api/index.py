@@ -35,4 +35,5 @@ def get_current_time():
 
 @app.route('/send_data')
 def accept_data():
-    return request.get_json(force=True)
+    #return request.get_json(force=True)
+    return 'data received'
