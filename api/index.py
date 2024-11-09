@@ -33,7 +33,7 @@ def home():
 def get_current_time():
     return {'time': time.time()}
 
-@app.route('/send_data')
+@app.route('/send_data', methods=['POST'])
 def accept_data():
     #return request.get_json(force=True)
     return 'data received'
