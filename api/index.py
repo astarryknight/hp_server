@@ -8,7 +8,6 @@ from flask_cors import CORS
 
 load_dotenv()
 api_key = os.getenv("API_KEY")
-print(api_key)
 
 app = Flask(__name__)
 CORS(
@@ -34,7 +33,7 @@ CORS(
 
 @app.route('/')
 def home():
-    return api_key
+    return "hwllo world"
 
 @app.route('/genai/<input>')
 def gemini(input):
