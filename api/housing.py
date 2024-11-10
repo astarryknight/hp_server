@@ -17,7 +17,7 @@ def get_housing_recommendations():
         return jsonify({"error": "Latitude and longitude are required"}), 400
 
     # RentCast API endpoint to search properties by geographic area (latitude, longitude, and radius)
-    rentcast_api_url = f'https://api.rentcast.io/v1/listings/rental/long-term?latitude={lat}&longitude={lng}&radius={radius}'
+    rentcast_api_url = f'https://api.rentcast.io/v1/listings/rental/long-term?latitude=30&longitude=170&radius=5'
 
     headers = {
         'Accept': 'application/json',
