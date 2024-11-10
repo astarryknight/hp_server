@@ -51,3 +51,18 @@ def accept_data():
     data = request.json
     #return request.get_json(force=True)
     return 'data received'
+
+
+# object = 
+# {
+#     "info" : {
+#         "f_name": "John",
+#         "l_name": "Doe",
+#         "email": "example@domain.com",
+#         "pasword": "1234"
+#     },
+#     "resources": {
+#         "budget": 1000,
+#         "time": 6,
+#         "location": [0.1, 0.1]
+# }}
