@@ -53,7 +53,7 @@ def accept_data():
     return data.info.f_name
 
 
-# object = 
+# input_object = 
 # {
 #     "info" : {
 #         "f_name": "John",
@@ -66,3 +66,16 @@ def accept_data():
 #         "time": 6,
 #         "location": [0.1, 0.1]
 # }}
+
+# output_object = 
+# {
+#     "budget_breakdown": {
+#         "housing": 10,
+#         "meals": 10,
+#         "SIM": 10,
+#         "Misc": 10
+#     },
+#     "housing": [[0,0], [1,2] , [3,4]],
+#     "SIM": "Mint Mobile",
+#     "genai":"abc"
+# }
