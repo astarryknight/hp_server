@@ -50,7 +50,7 @@ def get_current_time():
 def accept_data():
     data = request.json
     #return request.get_json(force=True)
-    return 'data received'
+    return data.info.f_name
 
 
 # object = 
