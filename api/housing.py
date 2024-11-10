@@ -1,4 +1,4 @@
-import requests
+#import requests
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -8,8 +8,8 @@ RENTCAST_API_KEY = 'RENTCAST'
 
 @app.route('/api/housing', methods=['GET'])
 def get_housing_recommendations():
-    lat = request.args.get('lat')
-    lng = request.args.get('lng')
+    lat = 30#request.args.get('lat')
+    lng = 170#request.args.get('lng')
     radius = request.args.get('radius', 5)  # Default radius is 5 miles if not provided
 
     # Validate that latitude and longitude are provided
