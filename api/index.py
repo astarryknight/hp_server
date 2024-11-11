@@ -45,11 +45,11 @@ def set_default(obj):
 def home():
     return "hwllo world"
 
-@app.route('/genai/<input>')
-def gemini(input):
+@app.route('/genai/<budget>')
+def gemini(budget):
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel("gemini-1.5-flash")
-    input = "MAKE SURE YOUR RESPONSE IS IN THIS FORMAT: Housing: $___,Meals: $___,Cell Service: $___\nMy budget is 1500. I will be living in California. Please recommend the best budget breakdown for a monthly budget with the following categories: Housing, Meals, and cell service. Give one number, not a range."
+    input = "MAKE SURE YOUR RESPONSE IS IN THIS FORMAT: Housing: $___,Meals: $___,Cell Service: $___\nMy budget is "+budget+". I will be living in California. Please recommend the best budget breakdown for a monthly budget with the following categories: Housing, Meals, and cell service. Give one number, not a range."
     response = model.generate_content(input)
     return response.text
 
